@@ -1,0 +1,454 @@
+@import "base/colors.scss";
+
+/*==========================================================
+  Fonts
+==========================================================*/
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair-Bold';
+  src: url('../../fonts/PlayfairDisplay-Bold.otf') format('truetype');
+} 
+
+@font-face {
+  font-family: 'Playfair-Regular';
+  src: url('../../fonts/PlayfairDisplay-Regular.otf') format('truetype');
+}
+
+/*==========================================================
+  Typography
+==========================================================*/
+
+h3 {
+  font-family: Playfair-Bold !important;
+}
+
+.offers, figcaption b, .list-group-item-heading {
+  font-family: Playfair-Regular !important;
+}
+
+h5 b {
+  font-family: Roboto-Regular !important;
+}
+
+/*==========================================================
+  Global styles
+==========================================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  overflow-x: hidden;
+  border-radius: 0px !important;
+  font-family: Roboto-Light;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child  > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-right: none !important;
+}
+
+.input-group-addon {
+  background-color: transparent !important;
+  border-left: none !important;
+}
+
+.glyphicon, .glyphicon-search, .list-group-item-heading {
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute; 
+  right: 20%;
+  display: inline;
+}
+
+figure {
+  display: inline-block;
+  margin: 20px;
+
+  img {
+    vertical-align: top;
+  }
+
+  figcaption {
+    text-align: center;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(66, 65, 63)
+  }
+}
+
+hr {
+  background-color: rgb(232, 232, 232);
+  color: rgb(232, 232, 232);
+}
+
+a, p, .list-group-item-heading, .list-group {
+  color: rgb(58, 58, 58) !important;
+}
+
+/*==========================================================
+  Button styles
+==========================================================*/
+
+.login {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 5px 10px;
+
+  &:hover {
+    color: #FF6978;
+  }
+}
+
+.register {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+
+  &:hover {
+    color: #FF6978;
+  }
+}
+
+.buy {
+  padding: 5px 0px;
+
+  &-now {
+    border: 1px solid white;
+    padding: 5px 15px 5px 15px;
+    background-color: transparent;
+  }
+}
+
+.checkout {
+  width: 100%;
+  float: right;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+
+  &:hover {
+    background-color: $button--hover;
+  }
+}
+
+.join {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+
+  &:hover {
+    background-color: $button--hover;
+  }
+}
+
+.solo {
+  background-color: lightgrey;
+  border: none;
+  min-width: 80px;
+  min-height: 30px;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.bogor {
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  min-width: 80px;
+  min-height: 30px;
+  
+  &:hover {
+    background-color: $button--hover;
+    border: none;
+    color: white;
+  }
+}
+
+/*==========================================================
+  Input styles
+==========================================================*/
+
+.search--input {
+  padding: 20px 20px;
+}
+
+.promotion--input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0px;
+}
+
+/*==========================================================
+  Top Menu
+==========================================================*/
+
+.top-menu {
+  background-color: rgb(37, 37, 37) !important;
+  margin: -1px -1px 20px -1px;
+
+  .navbar-default, .navbar-text, .navbar-default , .navbar-link {
+    color: white !important;
+  }
+
+  .navbar-link {
+    color: white !important;
+    
+    &:hover {
+      color: #ffff00 !important;
+    }
+  }
+}
+
+/*==========================================================
+  Logo
+==========================================================*/
+
+.logo {
+  &--right {
+    display: list-item !important;
+    overflow: hidden !important;
+  }
+
+  &--container .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:  flex;
+    flex-wrap: wrap;
+  }
+  
+  > [class*='col-'] {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/*==========================================================
+  Main Menu
+==========================================================*/
+
+.main-menu {
+  .navbar-default {
+    background-color: rgb(245, 245, 245) !important;
+    color: rgb(136, 136, 136) !important;
+  }
+
+  .nav > li > a {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    
+    &:hover {
+      transition-duration: 0.2s;
+      color: #ffffff !important; 
+    }
+  }
+}
+
+.color {
+  &--home:hover {
+    background-color: $home !important;
+  }
+
+  &--new-arrivals:hover {
+    background-color: $new-arrivals !important;
+  }
+
+  &--tuxedo:hover {
+    background-color: $tuxedo !important;
+  }
+
+  &--sweater:hover {
+    background-color: $sweater !important;
+  }
+
+  &--shoes:hover {
+    background-color: $shoes !important;
+  }
+
+  &--glasses:hover {
+    background-color: $glasses !important;
+  }
+
+  &--t-shirt:hover {
+    background-color: $t-shirt !important;
+  }
+
+  &--watches:hover {
+    background-color: $watches !important;
+  }
+}
+
+/*==========================================================
+  Images
+==========================================================*/
+
+.img {
+  position: relative;
+  
+  &-responsive {
+    width: 100%;
+    height: 100% !important;
+  
+    &-view {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.content-centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;  
+  text-align: center;
+  top: 40%;
+  color: white;
+  overflow: hidden;
+
+  &-btm {
+    position: absolute;  
+    width: 100%;
+    left: 10%;
+    top: 90%;
+    color: rgb(255, 251, 253);
+  }
+
+  &-inline {
+    display: inline;
+    margin-right: 15%;
+
+    &:hover {
+      transition-duration: 0.2s !important;
+      color: #FF6978 !important;
+    }
+  }
+
+  * {
+    overflow: hidden;
+  }
+
+  > button:hover {
+    transition-duration: 0.2s;
+    background-color: #FF6978;
+  }
+}
+
+.block-inline {
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;  
+  width: 100%;
+  left: 10%;
+  bottom: 10%;
+  color: rgb(255, 251, 253);
+}
+
+.stylize {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/*==========================================================
+  Special Offers
+==========================================================*/
+
+.special {
+  .row {
+    display: flex;
+    justify-content: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    align-items: center;
+  }
+
+  &--center {
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.offers {
+  border: 1px solid rgb(227, 227, 227); 
+  padding: 15px;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(68, 68, 68);
+}
+
+p.offers {
+  margin: 0px !important;
+}
+
+.line {
+  width: 100%; 
+  height: 1px; 
+  background-color: rgb(227, 227, 227);
+  padding-left: 0;
+  padding-right: 0;
+
+  &--left {
+    padding-right: 0 !important;
+  }
+
+  &--right {
+    padding-left: 0 !important;
+  }
+}
+
+.follow {
+  &--text {
+    margin-right: 20px;
+  }
+
+  &--button {
+    margin-left: 5px
+  }
+}
+
+/*==========================================================
+  Footer styles
+==========================================================*/
+
+.list-group {
+  line-height: 25px !important;
+  
+  > li > a {
+    color: black;
+  }
+
+  &-item-heading {
+    margin-bottom: 15px !important;
+    padding: 0px !important;
+  }
+}
