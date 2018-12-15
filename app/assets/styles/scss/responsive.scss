@@ -157,7 +157,7 @@
 }
 
 /* Devices Potrait */
-@media (max-width : 767px) {
+@media (min-width : 480px) and (max-width : 767px)  {
   .logo {
     text-align: -webkit-center;
     margin-bottom: 25px;
@@ -174,9 +174,13 @@
   .register, .cart {
     margin: 10px 0px;
   }
-
+  
   .text { 
     top: 30%;
+
+    &--woman-in-forest {
+      top: 20% !important;
+    }
   }
 
   .list-group-item-heading {
@@ -229,6 +233,10 @@
 
   .text { 
     top: 30%;
+
+    &--woman-in-forest {
+      top: -8% !important;
+    }
   }
 
   .list-group-item-heading {
@@ -280,6 +288,10 @@
 
   .text { 
     top: 30%;
+
+    &--woman-in-forest {
+      top: -8% !important;
+    }
   }
 
   .list-group-item-heading {
